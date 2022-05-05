@@ -1,12 +1,8 @@
 import { initTodoListHandlers } from './todoList.js';
 import { renderTasks } from './renderer.js';
-//import { onCreateTask } from './createTask';
-//import { onToggleTask } from './updateTask';
 
 document.addEventListener('DOMContentLoaded', () => {
   renderTasks();
-  //onCreateTask();
-  //onToggleTask();
   initTodoListHandlers();
 });
 
