@@ -1,5 +1,5 @@
-import { renderTasks } from './renderer';
-import { getItem, setItem } from './storage';
+import { renderTasks } from './renderer.js';
+import { getItem, setItem } from './storage.js';
 
 export const onCreateTask = () => {
   const taskTitleInputElem = document.querySelector('.task-input');
@@ -18,5 +18,5 @@ export const onCreateTask = () => {
   });
 
   setItem('tasksList', newTasksList);
-  renderTasks(tasks);
+  renderTasks(tasksList);
 };

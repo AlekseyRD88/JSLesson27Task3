@@ -1,4 +1,4 @@
-import { getItem, setItem } from './storage';
+import { getItem, setItem } from './storage.js';
 
 const listElem = document.querySelector('.list');
 const createCheckbox = ({ done, id }) => {
